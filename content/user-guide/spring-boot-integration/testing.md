@@ -76,6 +76,20 @@ If a static accessor needs to be used (e.g. processEngines.getProcessEngine(name
 ```
 Here, the `camunda.bpm.process-engine-name=foo` will set (a unique name) "foo" as the Process Engine name.
 
+## Disabling Telemetry
+
+The telemetry collection and reports are introduced with Camunda BPM 7.14.0. To prevent sending data generated during testing, we encourage you to disable the [telemetry reporter][engine-config-telemetryReporterActivate]. Please read more about topic in the dedicated page for [Telemetry][telemetry].
+
+Example of disabling the reporter in spring boot setups:
+
+```
+camunda.bpm:
+  generic-properties.properties:
+    telemetry-reporter-activate: false
+```
+
+[engine-config-telemetryReporterActivate]: {{< ref "/reference/deployment-descriptors/tags/process-engine.md#telemetryReporterActivate" >}}
+[telemetry]: {{< ref "/introduction/telemetry.md" >}}
 ## Camunda Assertions
 
 The [Camunda BPM Assertions]({{< ref 
