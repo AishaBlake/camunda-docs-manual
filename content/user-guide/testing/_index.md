@@ -121,15 +121,16 @@ The annotation is supported for [JUnit 3]({{< relref "#junit-3" >}}) and [JUnit 
 
 ## Disabling Telemetry
 
-The telemetry collection and reports are introduced with Camunda BPM 7.14.0. To prevent sending data generated during testing, we encourage you to disable the [telemetry reporter][engine-config-telemetryReporterActivate]. Please read more about topic in the dedicated page for [Telemetry][telemetry].
+The telemetry collection and reports are introduced with Camunda BPM 7.14.0. To prevent sending data generated during testing, we encourage you to disable the [telemetry reporter][engine-config-telemetryReporterActivate]. Please read more about topic in the dedicated page for [Telemetry][telemetry-initial-report].
 
 Example of disabling the reporter in xml based configuration:
 
-```<property name="telemetryReporterActivate">false</property>
+```
+<property name="telemetryReporterActivate">false</property>
 ```
 
 [engine-config-telemetryReporterActivate]: {{< ref "/reference/deployment-descriptors/tags/process-engine.md#telemetryReporterActivate" >}}
-[telemetry]: {{< ref "/introduction/telemetry.md" >}}
+[telemetry-initial-report]: {{< ref "/introduction/telemetry.md#initial-data-report" >}}
 
 ## Debug Unit Tests
 

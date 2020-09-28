@@ -78,7 +78,7 @@ Here, the `camunda.bpm.process-engine-name=foo` will set (a unique name) "foo" a
 
 ## Disabling Telemetry
 
-The telemetry collection and reports are introduced with Camunda BPM 7.14.0. To prevent sending data generated during testing, we encourage you to disable the [telemetry reporter][engine-config-telemetryReporterActivate]. Please read more about topic in the dedicated page for [Telemetry][telemetry].
+The telemetry collection and reports are introduced with Camunda BPM 7.14.0. To prevent sending data generated during testing, we encourage you to disable the [telemetry reporter][engine-config-telemetryReporterActivate]. Please read more about topic in the dedicated page for [Telemetry][telemetry-initial-report].
 
 Example of disabling the reporter in spring boot setups:
 
@@ -89,7 +89,7 @@ camunda.bpm:
 ```
 
 [engine-config-telemetryReporterActivate]: {{< ref "/reference/deployment-descriptors/tags/process-engine.md#telemetryReporterActivate" >}}
-[telemetry]: {{< ref "/introduction/telemetry.md" >}}
+[telemetry-initial-report]: {{< ref "/introduction/telemetry.md#initial-data-report" >}}
 ## Camunda Assertions
 
 The [Camunda BPM Assertions]({{< ref 
